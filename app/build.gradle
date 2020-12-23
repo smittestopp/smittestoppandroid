@@ -1,0 +1,201 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.mikepenz.aboutlibraries.plugin'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "no.simula.smittestopp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1030
+        versionName "1.3.0"
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary true
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group == 'androidx.appcompat') {
+                    details.useVersion "1.2.0-rc01"
+                }
+            }
+        }
+    }
+
+    testOptions.unitTests.includeAndroidResources = true
+
+    def STRING = "String"
+    def BOOLEAN = "boolean"
+    def INT = "int"
+
+    def DEBUG_NETWORK_LOGS = "DEBUG_NETWORK_LOGS"
+    def ENABLE_ANALYTICS = "ENABLE_ANALYTICS"
+
+    def TENANT = "TENANT"
+    def CLIENT_ID = "CLIENT_ID"
+    def POLICY_NAME = "POLICY_NAME"
+    def AUTHORITY = "AUTHORITY"
+    def SCOPES = "SCOPES"
+    def REGISTER_DEVICE_URL = "REGISTER_DEVICE_URL"
+    def DELETION_URL = "DELETION_URL"
+    def REDIRECT_URI = "REDIRECT_URI"
+
+    def APPCENTER_ID = "APPCENTER_ID"
+
+
+    def TRUE = "true"
+    def FALSE = "false"
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+
+            buildConfigField BOOLEAN, DEBUG_NETWORK_LOGS, TRUE // unused at the moment
+            buildConfigField BOOLEAN, ENABLE_ANALYTICS, TRUE
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            applicationIdSuffix '.debug' // this will added to app package name
+            versionNameSuffix '.d'
+
+            minifyEnabled false
+            debuggable true
+
+            buildConfigField BOOLEAN, DEBUG_NETWORK_LOGS, TRUE
+            buildConfigField BOOLEAN, ENABLE_ANALYTICS, TRUE
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'destination'
+    productFlavors {
+        dev {
+            buildConfigField STRING, TENANT, 'b2c'
+            buildConfigField STRING, CLIENT_ID, 'b2c'
+            buildConfigField STRING, POLICY_NAME, 'b2c'
+            buildConfigField STRING, AUTHORITY, 'b2c'
+            buildConfigField STRING, SCOPES, 'b2c'
+
+            buildConfigField STRING, REGISTER_DEVICE_URL, 'api'
+            buildConfigField STRING, DELETION_URL, 'api'
+
+            buildConfigField STRING, REDIRECT_URI, 'b2c'
+            manifestPlaceholders = [scheme: "", path: "", host: ""]
+        }
+
+        prod {
+            buildConfigField STRING, TENANT, 'b2c'
+            buildConfigField STRING, CLIENT_ID, 'b2c'
+            buildConfigField STRING, POLICY_NAME, 'b2c'
+            buildConfigField STRING, AUTHORITY, 'b2c'
+            buildConfigField STRING, SCOPES, 'b2c'
+
+            buildConfigField STRING, REGISTER_DEVICE_URL, 'api'
+            buildConfigField STRING, DELETION_URL, 'api'
+
+            buildConfigField STRING, REDIRECT_URI, 'b2c'
+            manifestPlaceholders = [scheme: "", path: "", host: ""]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            output.outputFileName = output.outputFileName.replace(".apk", "-${variant.versionName}.apk")
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0-rc01'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation "com.google.android.material:material:1.1.0"
+
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation "org.robolectric:robolectric:4.3.1"
+    testImplementation 'org.mockito:mockito-core:3.3.3'
+    testImplementation 'androidx.test:core:1.2.0'
+    testImplementation("net.zetetic:android-database-sqlcipher:4.3.0")
+
+    def room_version = "2.2.4"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+    implementation "com.mikepenz:aboutlibraries-core:8.1.2"
+    implementation "com.mikepenz:aboutlibraries:8.1.2"
+
+    implementation 'com.scottyab:rootbeer-lib:0.0.8'
+
+    implementation 'com.scottyab:secure-preferences-lib:0.1.7'
+
+    implementation "androidx.sqlite:sqlite:2.0.1"
+    implementation("net.zetetic:android-database-sqlcipher:4.3.0")
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation "de.adorsys.android:securestoragelibrary:1.2.4"
+
+
+    def appCenterSdkVersion = '3.1.0'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
+    implementation "com.microsoft.azure.sdk.iot:iot-device-client:1.21.1"
+    implementation 'com.microsoft.identity.client:msal:1.5.1'
+
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.4.2'
+
+    def work_version = "2.3.4"
+    implementation "androidx.work:work-runtime:$work_version"
+    implementation "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
+}

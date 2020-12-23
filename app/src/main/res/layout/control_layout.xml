@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/controlPanel"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/fragment_main">
+
+    <LinearLayout
+        android:id="@+id/locationPanel"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/gpsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/toggle_gps"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authorisation" />
+
+        <TextView
+            android:id="@+id/gps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/header_14sp"
+            android:text="@string/gps"
+            app:layout_constraintStart_toEndOf="@+id/gpsSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/authorisation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bluetoothPanel"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/bluetoothSwith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/toggle_bluetooth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gpsSwitch" />
+
+        <TextView
+            android:id="@+id/bluetooth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/header_14sp"
+            android:text="@string/bluetooth"
+            app:layout_constraintStart_toEndOf="@+id/bluetoothSwith"
+            app:layout_constraintTop_toBottomOf="@+id/gps_text" />
+    </LinearLayout>
+
+</LinearLayout>

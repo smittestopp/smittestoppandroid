@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:titleTextColor="@android:color/white"/>
+
+    <fragment
+            android:layout_above="@+id/nav_view"
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navGraph="@navigation/main_nav" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nav_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/fhiDark"
+        app:itemIconTint="@color/nav_tab_color_selector"
+        app:itemTextColor="@color/nav_tab_color_selector"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

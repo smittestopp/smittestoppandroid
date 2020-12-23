@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Onboarding Page 1 About -->
+    <string name="title1">Ditt bidrag teller</string>
+    <string name="onboarding1">
+        <b>Takk for at du lastet ned Smittestopp. Sammen kan vi knekke korona.</b>
+        \n\n\n
+        Med din hjelp kan vi varsle personer utsatt for smitte, og ved hjelp av appen registrere
+        bevegelsesmønster blant folk for å lage gode smitteverntiltak.
+    </string>
+
+    <!-- Onboarding Page 2 About -->
+    <string name="title2">Om Smittestopp</string>
+    <string name="onboarding2">
+        Du mottar en SMS hvis du har vært i nærheten av en annen bruker som senere tester positivt
+        for koronaviruset.
+        \n\n\n
+        <b>Jo flere vi er som bruker appen, jo raskere vil vi stoppe spredningen av koronaviruset.</b>
+    </string>
+
+    <!-- Onboarding Page 2 About -->
+    <string name="title3">Personvern</string>
+    <string name="short_privacy_1">
+        FHI lagrer informasjon om ditt bevegelsesmønster for å varsle deg om smitte, og måle effekt
+        av smitteverntiltakene i samfunnet.
+    </string>
+    <string name="short_privacy_2">
+        FHI bruker ikke informasjonen til å sjekke om du eller andre overholder råd og pålegg fra
+        myndighetene.
+    </string>
+    <string name="short_privacy_3">
+        All innsamlet personlig informasjon slettes automatisk etter 30 dager. Det er også mulig å slette egne opplysninger i appens innstillinger.
+    </string>
+    <string name="read_privavcy">LES PERSONVERNERKLÆRINGEN</string>
+
+    <!-- Privacy Policy  -->
+    <string name="privacy_policy_header">Personvernerklæring</string>
+    <string name="decline">AVSLÅ</string>
+    <string name="accept">AKSEPTER</string>
+    <string name="close">LUKK</string>
+
+    <!-- auth  -->
+    <string name="title4">Motta meldinger</string>
+    <string name="onboarding4">
+        Vi trenger ditt telefonnummer for å kontakte deg hvis du har vært i nærheten av noen som er
+        smittet.
+    </string>
+
+    <string name="next">NESTE</string>
+    <string name="register">REGISTRER</string>
+
+    <string name="stop">Stopp appen</string>
+    <string name="open">Åpne</string>
+    <string name="persistent_notification_title">Smittestopp</string>
+    <string name="notification_description">Følger med på posisjon og nærkontakter for å spore
+        smitte.</string>
+    <string name="tracking_enable_button">Slå på oppfølging</string>
+    <string name="open_settings">Åpne innstillinger</string>
+    <string name="settings">Innstillinger</string>
+    <string name="need_location_permission">Mangler tillatelse for posisjon</string>
+    <string name="ask_permission">Spør meg igjen</string>
+    <string name="dont_ask_permission">Lukk</string>
+    <string name="need_location_message">Smittestopp fungerer ikke uten tillatelse for å se
+        telefonens posisjon. Trykk \"Spør meg igjen\" for å gi tillatelse.</string>
+    <string name="need_location_message_settings">Smittestopp fungerer ikke uten tillatelse for å
+        se telefonens posisjon. Slå på posisjon tillatelse i innstillinger.</string>
+    <string name="gps_not_in_use">Takk for at du hjelper til, aktiverer du Stedstjenester kan du
+        hjelpe enda mer</string>
+    <string name="not_registered">Ikke registrert</string>
+    <string name="account">Min telefon</string>
+    <string name="check_your_entry">Sjekk oppføringen din i
+        <a href="https://eid.difi.no/nb/kontakt-og-reservasjonsregisteret">
+            Kontakt- og reservasjonsregisteret
+        </a></string>
+    <string name="check_your_data"><a href="https://helsenorge.no/koronavirus/koronaverktoy">
+            Se hvilke opplysninger og data  som er lagret her
+        </a></string>
+    <string name="divider">separator</string>
+    <string name="are_sure_signout">Er du sikker på at du vil logge ut? Registrer ditt telefonnummer en gang til for å logge inn igjen.</string>
+
+    <string name="settings_delete_data">SLETT ALLE MINE DATA</string>
+    <string name="authorisation">Tjenester</string>
+    <string name="support">Kundestøtte</string>
+    <string name="share_app_text">Del appen</string>
+
+    <string name="check_covid19_info">Informasjon om koronavirus og digitale verktøy</string>
+    <string name="coronavirus_link">
+        <a href="https://helsenorge.no/koronavirus">
+            Hold deg oppdatert om fakta og råd om koronaviruset
+        </a>
+    </string>
+
+    <string name="smittestopp_link">
+        <a href="https://helsenorge.no/smittestopp">
+            Les mer om Smittestopp
+        </a>
+    </string>
+
+    <string name="corona_tools_link">
+        <a href="https://helsenorge.no/koronavirus/koronaverktoy">
+            Se hvilke opplysninger Smittestopp har lagret om deg
+        </a>
+    </string>
+
+    <string name="corona_infection_link">
+        <a href="https://helsenorge.no/koronavirus/koronasmitte">
+            Selvrapportering av symptomer på koronavirus til forskning
+        </a>
+    </string>
+
+    <string name="corona_19_d">
+        Utbruddet med koronavirus er nå i en fase der det ikke lenger er mulig å identifisere smittekilden til alle som er syke.
+
+        \n\nÅ holde avstand og spore smitte bidrar til å begrense og forsinke utbrudden.
+    </string>
+    <string name="monitoring">Appstatus</string>
+    <string name="info">Info</string>
+    <string name="fully_activated">Helt aktivert</string>
+    <string name="main_msg">Følger ikke med på mulig kontakt med coronavirus smittede.</string>
+    <string name="fully_active">Fullt aktivert</string>
+    <string name="partially_activated">Delvis aktivert</string>
+    <string name="deactivated">Ikke aktivert</string>
+    <string name="thanks_for_help"><b>Takk for at du hjelper til!</b></string>
+    <string name="message_when_activated">Du blir kontaktet hvis du har vært i kontakt med, eller i
+        nærheten av, noen som blir bekreftet smittet av koronaviruset (hvis den smittede også har
+        lastet ned Smittestopp)</string>
+    <string name="share_app">Vil du bidra mer, del Smittestopp videre:</string>
+    <string name="contact_msg_partial">Nærhet til mulige koronavirussmittede kan ikke følges opp.</string>
+    <string name="contact_msg">Nærhet til mulige koronavirussmittede kan ikke følges opp.</string>
+    <string name="gps_bt_not_in_use">Når Smittestopp ikke er aktivert, kan appen ikke brukes til å
+        spore koronasmitte. \nVi trenger din hjelp!</string>
+    <string name="bt_not_in_use">Takk for at du hjelper til,\n aktiverer du Bluetooth kan du hjelpe
+        enda mer</string>
+    <string name="app_can_not_work">Appen vil ikke fungere optimalt.</string>
+
+    <string name="verification_error_try_later">Klarte ikke bekrefte ditt nummer. Prøv igjen senere.</string>
+    <string name="delete_request_failed">Klarte ikke slette din data fra serveren. Prøv igjen senere.</string>
+    <string name="deleting">SLETTER...</string>
+    <string name="log_out">Logg ut</string>
+    <string name="bluetooth_off">Bluetooth er avslått. Gå til innstillinger for å slå på.</string>
+    <string name="gps_off">GPS er avslått. Gå til innstillinger for å slå på.</string>
+
+    <string name="ok">Slett</string>
+    <string name="cancel">Avbryt</string>
+    <string name="are_you_sure_delete">Er du sikker?</string>
+    <string name="delete_data">Hvis vi sletter all dataen din, vil vi ikke kunne vite om du har vært i kontakt med en som er smittet av Koronaviruset, og heller ikke ha mulighet til å varsle deg om dette. Dette vil bidra til mørketall i oversikten og gjøre det vanskelig å hindre spredning.</string>
+
+    <string name="toggle_gps">Slå GPS av eller på</string>
+    <string name="toggle_bluetooth">Slå Bluetooth av eller på</string>
+    <string name="desc_icon">Ikon</string>
+
+    <string name="privacy_policy">
+        <![CDATA[
+<h1>Nedlasting og bruk av Smittestopp</h1>
+
+<h3>Frivillig bruk</h3>
+<p>
+    Det er frivillig å laste ned og å bruke Smittestopp. Det er også frivillig å ta med mobiltelefonen når man er
+    utenfor
+    hjemmet. Folkehelseinstituttets behandling av personopplysninger har hjemmel i forskrift om digital smittesporing og
+    epidemikontroll i anledning utbrudd av covid-19.
+</p>
+
+<p>
+    Under beskrives først hvordan tjenesten fungerer og deretter følger personvernerklæringen. Du må lese gjennom
+    beskrivelsen og akseptere vilkårene for å kunne ta den i bruk. Akseptknapp finner du nederst. Hvis du ikke aktiverer
+    Smittestopp, blir ingen personopplysninger samlet inn.
+</p>
+
+<p>
+    Du kan når som helst slette dine innsamlede personopplysninger og slutte å bruke Smittestopp. Smittestopp har 16 års
+    aldersgrense.
+</p>
+
+<h3>Hvordan Smittestopp fungerer</h3>
+<p>
+    Utbruddet av covid-19 er et alvorlig utbrudd av smittsom sykdom som kan få alvorlige helsekonsekvenser for mange
+    mennesker. Sykdommen har gått over i en ny fase hvor vi ikke har klart å identifisere smittekjeden for alle som blir
+    syke. Manuell smittesporing tar lang tid, er unøyaktig og krever store ressurser. Folkehelseinstituttet (FHI) har
+    derfor
+    utviklet appen Smittestopp.
+</p>
+
+<p>
+    Smittestopp innebærer en automatisert og digital oppsporing av personer som smittede har vært i nær kontakt med
+    (nærkontakter) gjennom GPS-posisjon og Bluetooth-nærhet, slik at nærkontaktene kan varsles og ta forholdsregler som
+    både
+    verner dem selv og andre. Appen muliggjør også måling av effekten av samfunnsmessige restriksjoner, slik at andre
+    tiltak
+    eventuelt kan forlenges, nedskaleres eller avsluttes. Nytten av Smittestopp øker jo flere som tar den i bruk.
+</p>
+
+<p>
+    Smittestopp innebærer at det lagres data om brukernes bevegelsesmønster, og kontakt med andre mobiltelefoner som har
+    lastet ned Smittestopp. Informasjonen lagres i maksimalt 30 dager. Kontakt registreres både ved bruk av GPS og
+    Bluetooth. Det er ikke nødvendig at de som registreres kjenner hverandre.
+</p>
+
+<p>
+    Smittstopp registrerer automatisk alle telefoner med nedlastet og aktivert Smittestopp-app, som er nær hverandre.
+    Først
+    når en av brukerne registreres som smittet, analyseres hvilke telefoner vedkommendes telefon har vært tilstrekkelig
+    nær,
+    lenge nok, til at det finnes smittefare.
+</p>
+
+<p>
+    Ved lansering av Smittestopp, er kontakt nærmere enn 2 meter i mer enn 15 minutter i løpet av 24 timer, definert som
+    nærkontakt med smittefare. Dersom dette endres, vil du få informasjon om dette.
+</p>
+
+<p>
+    Når en person får en covid-19-prøve som er positiv, vil dette registreres hos FHI i det som kalles MSIS-databasen,
+    jf.
+    forskrift om meldingssystem for smittsomme sykdommer. Registreringen i MSIS-databasen skjer elektronisk og det er
+    FHI
+    som er dataansvarlig for innsamling og behandling av helseopplysninger i MSIS. MSIS-database inneholder 11-sifret
+    fødselsnummer og kan legge til mobiltelefonnummer til vedkommende som har avlagt positiv covid-19-prøve.
+</p>
+
+<p>
+    Ved hjelp av fødselsnummer kan informasjon om smitte kobles til mobiltelefonnummeret til personer som har lastet ned
+    appen. Mobiltelefonnummeret hentes fra det sentrale Kontakt- og reservasjonsregisteret. De som ikke har registrert
+    mobiltelefonnummer der, vil ikke kunne få beskjed per SMS. Du kan oppdatere dine opplysninger i dette registeret på
+    <a
+        href="https://eid.difi.no/nb/oppdater-kontaktinformasjonen-din-kun-ett-sted">https://eid.difi.no/nb/oppdater-kontaktinformasjonen-din-kun-ett-sted</a>.
+</p>
+
+<p>
+    Ved å følge, og lagre, bevegelsesmønster og hvilke andre mobiltelefoner som har vært i nærheten av mobiltelefonen
+    til en
+    som har blitt smittet siste to uker, kan nærkontaktene få melding om at de har vært i nærheten av en som er smittet
+    og
+    at de bør ta forholdsregler for å verne egen og andres helse.
+</p>
+
+<p>
+    Et eksempel: Kari, Georg, Sheila og Per har alle lastet ned Smittestopp. Alle fire er friske. De omgås med ujevne
+    mellomrom. Kari tester etter en stund positivt på covid-19. Idet dette registreres hos FHI, får Georg, Sheila og Per
+    varsel om at de har vært i nærheten av en person som er smittet. De kan da passe på egen helse og gå i karantene. De
+    får
+    ikke vite når eller hvor dette skjedde. De får ikke vite at det er Kari som er den personen som er "kilden" til at
+    de
+    blir varslet, men det kan heller ikke utelukkes at de vil forstå at det er henne. De vil få vite hvilken dag de var
+    i
+    nærheten av en smittet, så de vet startdatoen for hvor lenge de skal være i karantene.
+</p>
+
+<p>
+    Personopplysningene som samles inn vil bare bli brukt for dette formålet, ikke til å følge med på om enkeltpersoner
+    overholder råd eller pålegg. Helseopplysninger eller lokasjonsdata kan ikke gjøres tilgjengelig for politi eller
+    påtalemyndighet eller brukes i forsikringsøyemed eller av arbeidsgivere selv om du samtykker. Personopplysningene
+    kan
+    ikke utnyttes kommersielt.
+</p>
+
+<p>
+    Smittestopp er en ny teknologisk løsning som FHI håper vil bidra til å gjøre konsekvensene av covid-19 mindre for
+    den
+    enkelte og for samfunnet. FHI kan ikke garantere at Smittestopp vil gi det ønskede resultat. FHI kan ikke under noen
+    omstendighet holdes ansvarlig for tap av liv eller helse, fortjeneste, eller noe annet økonomisk tap som kan oppstå
+    i
+    forbindelse med bruk eller levering av Smittestopp, eller som følge av FHIs manglende leveranse av tjenesten.
+</p>
+
+<h2>Personvernerklæring</h2>
+<p>
+    Etter du har lastet ned Smittestopp, vil FHI behandle personopplysninger om deg. Nedenfor finner du derfor
+    informasjon
+    om personopplysninger som samles inn, hvorfor vi gjør dette og dine rettigheter knyttet til behandlingen av
+    personopplysningene.
+</p>
+
+<p>
+    Behandlingsansvarlig for personopplysningene vi behandler er Folkehelseinstituttet (FHI) ved direktør Camilla
+    Stoltenberg. Kontaktinformasjonen til FHI er Lovisenberggata 6 og 8, 0456 Oslo. Telefonnummer er 21 07 70 00.
+    E-postadressen er <a href="mailto:folkehelseinstituttet@fhi.no">folkehelseinstituttet@fhi.no</a>.
+</p>
+
+<p>
+    For spørsmål du måtte ha om FHIs behandling av dine personopplysninger, kan du også kontakte vårt personvernombud på
+    <a href="mailto:personvernombud@fhi.no">personvernombud@fhi.no</a>.
+</p>
+
+<h3>1. Hvorfor samler vi inn personopplysninger og hvilken hjemmel som benyttes</h3>
+<p>
+    Formålet med appen Smittestopp er å advare de som har vært i nærkontakt med smittede slik at de kan beskytte seg
+    selv og
+    å verne andre ved å gå i karantene.
+</p>
+
+<p>
+    FHI har hjemmel for å samle inn og behandle personopplysningene i personvernforordningen artikkel 6 nr. 1 bokstav e
+    og
+    artikkel 9 nr. 2 bokstav i) og i forskrift om digital smittesporing og epidemikontroll i anledning utbrudd av
+    covid-19
+    som er gitt med hjemmel i smittevernloven § 7-12. Personopplysningene vil kun bli benyttet for det formål som angis
+    i
+    forskriften, nemlig rask oppsporing av og formidling av råd til personer som kan være smittet.
+</p>
+
+<p>
+    Gjennom overvåkning av aggregerte opplysninger på befolkningsnivå skal bruk av Smittestopp gjøre det mulig enklere å
+    følge smitteutbredelse og å vurdere effekten av smitteverntiltak. Mobiltelefonnummer og andre direkte
+    personidentifiserende kjennetegn om brukerne vil ikke bli behandlet for dette formålet.
+</p>
+
+<p>
+    Dine personopplysninger vil ikke bli benyttet til kontroll av den enkelte, som for eksempel å kontrollere om noen
+    overholder § 5 i forskrift om karantene, isolasjon og forbud mot opphold på fritidseiendommer mv. i anledning
+    utbrudd av
+    covid-19.
+</p>
+
+<p>
+    Helseopplysninger eller lokasjonsdata kan ikke gjøres tilgjengelig for politi eller påtalemyndighet eller brukes i
+    forsikringsøyemed eller av arbeidsgivere. Personopplysningene kan ikke utnyttes kommersielt.
+</p>
+
+<p>
+    FHI vil kunne anonymisere personopplysningene og bruke dem til forskningsformål. Slike anonyme sub-datasett vil
+    kunne
+    brukes til modellering av epidemien (prediksjoner). De kan også benyttes for å vurdere hvilken effekt politiske
+    tiltak
+    og pålegg, som for eksempel karantene og skolestenging, har på epidemien. Man vil for eksempel kunne lage en sosial
+    distanserings-indikator for hver kommune. Slike data vil også bidra til å kunne forstå befolkningens
+    bevegelsesmønster
+    og hvordan folk møtes. Slik informasjon vil kunne brukes til å vurdere om det er spesielle områder, aldersgrupper
+    eller
+    aktiviteter som er mer utsatt for å genere smitte («hotspots»).
+</p>
+
+<h3>2. Utlevering av personopplysninger til andre</h3>
+<p>
+    Personopplysningene dine vil behandles av FHI. Som hovedregel vil dine personopplysninger ikke behandles av
+    mennesker,
+    da dette er automatiserte prosesser. Likevel kan det oppstå behov for at autorisert personell kan gis tilgang til
+    identifiserende opplysninger i registeret.. Det føres en logg over hvem som har slått opp på hvilke
+    personopplysninger
+    og når dette skjedde. Du kan få innsyn i denne loggen.
+</p>
+
+<p>
+    Ved varsling av andre personer om at de har vært i nærheten av en smittet, vil ingen kjennetegn ved den smittede
+    formidles. Nærkontaktene vil få vite hvilken dag kontakten skjedde (innenfor 24 timer), slik at tiden for karantene
+    kan
+    beregnes. I situasjoner der få har kontakt med andre, kan vi likevel ikke utelukke at noen av de varslede kan forstå
+    hvem den smittede er. Vi kan derfor ikke utelukke at andre kan forstå at du er blitt smittet.
+</p>
+
+<p>
+    FHI bruker databehandlere til å samle inn, lagre eller på annen måte behandle personopplysninger på våre vegne. I
+    slike
+    tilfeller har FHI inngått avtaler for å ivareta informasjonssikkerheten i alle ledd av behandlingen. FHI benytter
+    seg av
+    følgende databehandlere per i dag:
+</p>
+
+<ul>
+    <li>Simula Research Laboratory AS, Simula Metropolitan Center for Digital Engingeering AS (Simula Met) og Simula
+        Consulting AS for utvikling av tjenesten</li>
+    <li>Microsoft Ireland Operations Ltd for lagring av personopplysningene i MS Azure</li>
+    <li>Norsk Helsenett for innsynsløsningen</li>
+</ul>
+
+<p>
+    All behandling av personopplysninger som vi foretar skjer innenfor EU/EØS-området, slik at personvernforordningen
+    gjelder fullt ut.
+</p>
+
+<h3>3. Hvilke personopplysninger som samles inn og hvor lenge de lagres</h3>
+<p>Smittestopp samler inn følgende personopplysninger når du laster ned og aktiverer den på telefonen din:</p>
+
+<ul>
+    <li>Mobiltelefonnummer</li>
+    <li>Alder</li>
+    <li>GPS-posisjon slik at nærkontakt med andre personer/mobiltelefoner kan spores, det vil si at det registreres
+        bevegelsesmønster kontinuerlig (lengdegrad, breddegrad, hastighet, høyde over havet, tid på ulike lokasjoner)
+        når
+        Smittestopp er aktivert og mobiltelefonen er påslått</li>
+    <li>Generert UUID fra Smittestopp (unik ID som følger telefonnummeret)</li>
+    <li>Operativsystem, mobiloperatør, versjonsnummer, og telefonmodell - dette brukes til å øke kvaliteten på
+        innsamlede data
+        da ulike telefoner og operativsystem har forskjellig presisjon på posisjonsdata</li>
+    <li>Bluetooth data om Smittestopp-apper på andre telefoner som er innen rekkevidde av telefonen (startidspunkt for
+        kontakt,
+        sluttidspunkt for kontakt, generert UUID for telefoner i nærheten, vektor med signalstyrke for telefoner i
+        nærheten)
+        logges kontinuerlig</li>
+</ul>
+
+<p>
+    For å identifisere smittede brukere og kontakte brukere som har vært i nærkontakt med smittede, kan
+    personopplysningene
+    i systemet kobles med personopplysninger i Meldingssystem for smittsomme sykdommer, jf. MSIS-forskriften § 1-1 og
+    Registeret over digital kontaktinformasjon og reservasjon, jf. eForvaltningsforskriften § 29.
+</p>
+
+<p>
+    Så lenge du har aktivert appen vil GPS-data, opplysninger om hvor du har vært og hvilke andre mobiltelefoner du har
+    vært
+    i nærheten av, registreres, oppbevares og slettes automatisk etter 30 dager.
+</p>
+
+<p>
+    FHI vil oppbevare informasjon om hvilke mobiltelefonnumre som har vært varslet om at de har vært i nærkontakt med en
+    smittet, i 30 dager. FHI vil vurdere behov for denne lagringen og vil gi beskjed om denne tidsperioden endres eller
+    om
+    slik lagring utelates. Du vil da få beskjed om dette.
+</p>
+
+<p>
+    Faste opplysninger som mobiltelefonnummer, UUID og versjonsnummer på mobiltelefonens operativsystem lagres så lenge
+    du
+    bruker Smittestopp.
+</p>
+
+<p>
+    Du kan når som helst selv slette dine personopplysninger ved å bruke slettefunksjonaliteten i Smittestopp ved å
+    trykke
+    på sletteknappen i appen. Dine personopplysninger vil da bli slettet både i mobiltelefonen og sentralt. Deretter kan
+    du
+    slette selve appen fra mobiltelefonen.
+</p>
+
+<p>
+    Hvis du bare sletter Smittestopp fra mobiltelefonen (uten å trykke på sletteknappen), slettes dine
+    personopplysninger
+    sentralt etter en uke.
+</p>
+
+<p>
+    Alle innsamlede personopplysninger skal slettes når forskriften opphører å gjelde den 1. desember 2020.
+</p>
+
+<h3>4. Dine rettigheter</h3>
+<p>
+    Du har rett til å kreve innsyn, retting eller sletting av personopplysningene vi behandler om deg. Dette gjelder for
+    eksempel innsyn i dine lokasjonsopplysninger og hvem som har sett på dine personopplysninger. Du har også rett til å
+    kreve begrenset behandling og rette innsigelse mot behandlingen. Du kan lese mer om disse rettighetene på
+    Datatilsynets
+    nettside: <a href="https://www.datatilsynet.no">www.datatilsynet.no</a>.
+</p>
+
+<p>
+    Du kan få innsyn i hvilke GPS-opplysninger vi har registrert for din telefon ved å logge inn på Helsenorge
+    (<a href="https://www.helsenorge.no/smittestopp">www.helsenorge.no/smittestopp</a>). Du vil ikke få innsyn i
+    Bluetooth-opplysninger da dette vil kunne bidra til å
+    identifisere hvem som er smittet. Dersom du ikke ønsker å bruke Helsnorge for å få innsyn, eller dersom du ønsker å
+    benytte deg av dine øvrige rettigheter, kan du henvende deg til vårt personvernombud <a
+        href="mailto:personvernombud@fhi.no">personvernombud@fhi.no</a>
+</p>
+
+<p>
+    Vi vil svare på din henvendelse så fort som mulig, og senest innen 30 dager. Vi vil be deg om å bekrefte identiteten
+    din
+    eller å oppgi ytterligere informasjon før vi lar deg ta i bruk dine rettigheter overfor oss. Dette gjør vi for å
+    være
+    sikre på at vi kun gir tilgang til dine personopplysninger til deg - og ikke noen som gir seg ut for å være deg.
+</p>
+
+<h3>5. Klage</h3>
+<p>
+    Dersom du mener at vår behandling av personopplysninger ikke stemmer med det vi har beskrevet her eller at vi på
+    andre
+    måter bryter personvernlovgivningen eller annen relevant lovgivning, så kan du klage til Datatilsynet eller du kan
+    kontakte oss eller vårt personvernombud.
+</p>
+
+<p>
+    Du finner informasjon om hvordan kontakte Datatilsynet på Datatilsynets nettsider: <a
+        href="https://www.datatilsynet.no">www.datatilsynet.no</a>.
+</p>
+
+<h3>6. Endringer</h3>
+<p>
+    Covid-19-epidemien er i rask utvikling og det kan bli nødvendig med endringer i hvordan vi behandler
+    personopplysninger.
+    Dette kan medføre endringer i tjenestens funksjonalitet og i personvernerklæringen. Vi vil informere om slike
+    eventuelle
+    endringer i så god tid som mulig og på en måte som gjør at du kan ta stilling til om du fortsatt ønsker å bruke
+    Smittestopp før endringene trer i kraft. Du vil varsles via SMS om slike endringer.
+</p>
+]]>
+    </string>
+
+    <string name="you_need_authentication">Smittestopp trenger din hjelp.</string>
+    <string name="provision_failed">Noe gikk galt. Registrer telefonnummeret ditt igjen</string>
+    <string name="internet_error">Sjekk at du har internett tilgang</string>
+    <string name="some_thing_went_wrong">Noe gikk galt. Vi prøver å fikse dette i bakgrunnen og sier ifra hvis vi trenger din hjelp.</string>
+
+    <string name="go_to_setting_to_change_the_permissions"><u>Gå til <b>instillinger</b> for å endre oppfølgingen.</u></string>
+
+    <string name="go_to_settings">Gå til instillinger for å endre appstatus</string>
+    <string name="turn_location_services">slå på lokasjonstjenester først</string>
+    <string name="turn_bluetooth">Slå på Bluetooth først</string>
+    <string name="ask_turn_on_bluetooth">Bluetooth er slått av. Vil du slå på Bluetooth?</string>
+    <string name="location_reminder">Posisjon aktivert</string>
+    <string name="location_gps_reminder">Bluetooth og posisjon aktivert</string>
+    <string name="reminder_description">Trykk for å slå på Smittestopp</string>
+    <string name="bluetooth_reminder">Bluetooth aktivert</string>
+    <string name="new_version_available">En ny versjon er tilgjengelig</string>
+    <string name="new_version_description">Trykk for å oppdatere Smittestopp</string>
+    <string name="data_deleted_notification">Dine data har blitt slettet</string>
+    <string name="data_deleted_action">Trykk for å registrere på nytt</string>
+    <string name="data_deleted_request">
+        Dine data ble slettet av en av følgende årsaker:\n\n
+        \u2022 Det er syv dager siden du sist lastet opp data \n
+        \u2022 Du slettet dine data fra en annen enhet \n
+        \u2022 Vedlikehold av serverene
+    </string>
+    <string name="support_phone">23 32 70 00</string>
+    <string name="gps_on">GPS er slått på</string>
+    <string name="bluetooth_on">Bluetooth er slått på</string>
+    <string name="about">Om Appen</string>
+    <string name="digital_tools">Digitale verktøy:</string>
+    <string name="opensource_licenses"><u>Lisenser for åpen kildekode</u></string>
+    <string name="privacy_policy_link"><u>Personvernerklæring</u></string>
+    <string name="age_verification_title">Fødselsdato</string>
+    <string name="age_dialog_title">Oppgi fødselsdato</string>
+    <string name="age_verification_detail">Du må være over 16 år for å bruke Smittestopp. Vennligst oppgi fødselsdato.</string>
+    <string name="too_young">Du må være minst 16 år for å bruke Smittestopp</string>
+    <string name="register_age">Registrer alder</string>
+    <string name="register_age_required">Din fødselsdato er ikke bekreftet. For å fortsette og bruke Smittestopp må du bekrefte at du er minst 16 år.</string>
+    <string name="register_dob">Registrer fødselsdato</string>
+    <string name="date_picker">Datovelger</string>
+    <string name="selected_date">Valgt dato</string>
+    <string name="age_ok">Alder bekreftet</string>
+    <string name="age_why"><u>Hvorfor må du registrere fødselsdato?</u></string>
+    <string name="age_why_title">Hvorfor må du registrere fødselsdato?</string>
+    <string name="age_why_description">
+        Er du under 16 år har vi ikke lov til å la deg bruke denne appen. Du må derfor registrere din fødselsdato slik at vi kan være sikre på at du er gammel nok til å bruke den.
+    </string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/fhiLight</color>
+    <color name="colorPrimaryDark">@color/fhiDark</color>
+    <color name="colorAccent">#04AB79</color>
+
+    <color name="colorHint">#0C3700B3</color>
+
+    <color name="fhiDark">#393C61</color>
+    <color name="fhiLight">#0580A7</color>
+    <color name="bggray">#F1EFEA</color>
+
+    <color name="white">#fff</color>
+    <color name="white_20">#45ffffff</color>
+    <color name="black">#000</color>
+    <color name="black_20">#33000000</color>
+    <color name="green">#04AB79</color>
+
+    <color name="selected_color">@color/fhiDark</color>
+    <color name="unselected_color">@color/colorAccent</color>
+
+    <color name="red">#DE5E56</color>
+    <color name="redDark">#A20E06</color>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="no.simula.corona.ui.main.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="no.simula.corona.ui.main.MainFragment"
+        android:label="@string/monitoring"
+        tools:layout="@layout/fragment_main" />
+
+
+    <fragment
+
+        android:id="@+id/navigation_info"
+        android:name="no.simula.corona.ui.main.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
+
+
+</navigation>

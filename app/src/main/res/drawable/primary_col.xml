@@ -1,0 +1,24 @@
+<!-- drawable/primary_col.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="250dp"
+    android:height="40dp"
+    android:viewportWidth="250"
+    android:viewportHeight="40"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M8 0H242C246.418 0 250 3.58172 250 8V32C250 36.4183 246.418 40 242 40H8C3.58172 40 0 36.4183 0 32V8C0 3.58172 3.58172 0 8 0Z"
+            />
+
+        <path
+            android:pathData="M0 0V40H250V0"
+            android:fillColor="@color/fhiDark"
+            />
+
+    </group>
+
+</vector>

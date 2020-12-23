@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_text_size">24sp</dimen>
+    <dimen name="subtitle_text_size">18sp</dimen>
+    <dimen name="body_text_size">14sp</dimen>
+
+    <dimen name="on_boarding_top_margin">24dp</dimen>
+    <dimen name="on_boarding_drawable_ver_margin">26dp</dimen>
+    <dimen name="on_boarding_drawable_size">120dp</dimen>
+    <dimen name="on_boarding_drawable_size_large">240dp</dimen>
+    <dimen name="onboarding_bottom_margin">16dp</dimen>
+
+
+    <dimen name="button_padding_horizontal">36dp</dimen>
+    <dimen name="button_padding_vertical">8dp</dimen>
+    <dimen name="button_lable_size">12sp</dimen>
+
+    <dimen name="ob_privacy_image_top_margin">14dp</dimen>
+    <dimen name="ob_privacy_text_top_margin">10dp</dimen>
+
+    <dimen name="privacy_image_track">26dp</dimen>
+    <dimen name="privacy_image_advice">33dp</dimen>
+    <dimen name="privacy_image_bin">34dp</dimen>
+
+    <dimen name="monitor_image">75dp</dimen>
+
+    <dimen name="monitor_image_top_margin_icon">12dp</dimen>
+
+    <dimen name="monitor_image_top_margin">24dp</dimen>
+    <dimen name="monitor_image_bottom_text_margin">12dp</dimen>
+    <dimen name="monitor_text_top_margin">16dp</dimen>
+
+
+    <dimen name="info_text_margin">8dp</dimen>
+
+
+</resources>

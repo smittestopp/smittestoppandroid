@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray">
+
+    <FrameLayout
+        android:id="@+id/fragmentHost"
+        android:layout_marginBottom="@dimen/onboarding_bottom_margin"
+        android:layout_above="@id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <no.simula.corona.ui.widgets.DotPageIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_width="64dp"
+        android:layout_height="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/fhiDark"
+        android:visibility="gone" />
+
+</RelativeLayout>

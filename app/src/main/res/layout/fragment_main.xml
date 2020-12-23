@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:paddingTop="32dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/monitoring"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/monitoring"
+                android:textAppearance="@style/title" />
+
+            <ImageButton
+                android:id="@+id/enableTracking"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="@dimen/monitor_image"
+                android:layout_height="@dimen/monitor_image"
+                android:layout_marginTop="@dimen/monitor_image_top_margin"
+                android:background="#00FFFFFF"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/desc_icon"
+                app:srcCompat="@drawable/ic_monitor" />
+
+            <TextView
+                android:id="@+id/textViewMainStatus"
+                android:layout_marginTop="@dimen/monitor_image_top_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:text="@string/fully_activated"
+                android:textAppearance="@style/body"
+                android:textStyle="bold"
+                android:textColor="@color/green" />
+
+            <LinearLayout
+                android:id="@+id/llImages"
+                android:layout_marginTop="@dimen/monitor_image_top_margin_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMainStatus">
+
+                <ImageView
+                    android:id="@+id/imageBluetooth"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/toggle_bluetooth"
+                    android:src="@drawable/ic_bluetooth" />
+
+                <ImageView
+                    android:id="@+id/imageGps"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/toggle_gps"
+                    android:src="@drawable/ic_location" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/monitor_image_top_margin"
+                android:layout_marginBottom="@dimen/monitor_image_bottom_text_margin"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/body"
+                    android:gravity="center_horizontal"
+                    android:text="@string/thanks_for_help"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSettings1"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/body"
+                    android:gravity="center_horizontal"
+                    android:text="@string/go_to_setting_to_change_the_permissions" />
+
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_marginTop="@dimen/monitor_text_top_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/body"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_msg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textShare"
+                android:layout_marginTop="@dimen/monitor_image_bottom_text_margin"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/body"
+                android:gravity="center_horizontal"
+                android:text="@string/share_app"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ageRequestWhy"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/body"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:text="@string/age_why" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_marginTop="@dimen/monitor_text_top_margin"
+                android:layout_marginBottom="@dimen/monitor_image_top_margin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/buttonShare"
+                    style="@style/button_label"
+                    android:layout_marginBottom="@dimen/onboarding_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_filled_light_round"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/button_padding_vertical"
+                    android:paddingBottom="@dimen/button_padding_vertical"
+                    android:textAllCaps="true"
+                    android:text="@string/share_app_text" />
+
+                <TextView
+                    android:id="@+id/buttonSettings"
+                    style="@style/button_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_filled_light_round"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/button_padding_vertical"
+                    android:paddingBottom="@dimen/button_padding_vertical"
+                    android:textAllCaps="true"
+                    android:text="@string/go_to_settings" />
+
+                <TextView
+                    android:id="@+id/buttonRegisterAge"
+                    style="@style/button_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_filled_red_round"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/button_padding_vertical"
+                    android:paddingBottom="@dimen/button_padding_vertical"
+                    android:textAllCaps="true"
+                    android:visibility="invisible"
+                    android:text="@string/register_age" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="DotPageIndicator">
+        <attr name="selected_color" format="reference" />
+        <attr name="unselected_color" format="reference" />
+        <attr name="totalDots" format="integer" />
+    </declare-styleable>
+</resources>

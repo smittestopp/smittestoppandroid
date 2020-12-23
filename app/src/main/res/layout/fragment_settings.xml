@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Android - Settings -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/settings"
+            android:paddingTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandontext_bold"
+            android:textAppearance="@style/title"
+            android:text="@string/settings" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/settings"
+            app:layout_constraintTop_toBottomOf="@id/settings"
+            tools:text="0.0.5" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/brandontext_medium"
+                android:textAppearance="@style/subtitle"
+                android:text="@string/account" />
+
+            <Button
+                android:id="@+id/logout_button"
+                style="@style/regular_12p_dark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:text="@string/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/outlined_button_warn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account"
+                tools:layout_editor_absoluteX="281dp"
+                tools:layout_editor_absoluteY="106dp" />
+
+            <LinearLayout
+                android:layout_below="@+id/account"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/brandontext_regular"
+                    android:textAppearance="@style/body"
+                    tools:text="+4700000000" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/authorisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/brandontext_medium"
+            android:textAppearance="@style/subtitle"
+            android:text="@string/authorisation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/gpsSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/toggle_gps"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/authorisation" />
+
+            <TextView
+                android:id="@+id/gps_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/brandontext_regular"
+                android:textAppearance="@style/body"
+                android:text="@string/gps"
+                app:layout_constraintStart_toEndOf="@+id/gpsSwitch"
+                app:layout_constraintTop_toBottomOf="@+id/authorisation" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/bluetoothSwith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/toggle_bluetooth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gpsSwitch" />
+
+            <TextView
+                android:id="@+id/bluetooth_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/brandontext_regular"
+                android:textAppearance="@style/body"
+                android:text="@string/bluetooth"
+                app:layout_constraintStart_toEndOf="@+id/bluetoothSwith"
+                app:layout_constraintTop_toBottomOf="@+id/gps_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/brandontext_medium"
+            android:textAppearance="@style/subtitle"
+            android:text="@string/support"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/support_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/body"
+            android:text="@string/support_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/support" />
+
+        <TextView
+            android:id="@+id/support_phone"
+            android:autoLink="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/body"
+            android:text="@string/support_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/support_email" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/privacy_policy_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/body"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="@string/privacy_policy_link" />
+
+        <TextView
+            android:id="@+id/opensource_licenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/brandontext_regular"
+            android:textAppearance="@style/body"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="@string/opensource_licenses" />
+
+        <Button
+            android:id="@+id/delete_data_button"
+            style="@style/regular_12p"
+            android:layout_marginTop="@dimen/monitor_image_top_margin"
+            android:layout_marginBottom="@dimen/monitor_image_top_margin"
+            android:padding="8dp"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/background_filled_red_round"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:text="@string/settings_delete_data" />
+    </LinearLayout>
+</ScrollView>
+

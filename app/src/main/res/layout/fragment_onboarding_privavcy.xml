@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:id="@+id/llMain"
+        android:layout_marginBottom="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/on_boarding_top_margin"
+            android:paddingBottom="@dimen/onboarding_bottom_margin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewWelcome"
+                style="@style/title"
+                android:layout_marginTop="@dimen/on_boarding_top_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title3" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/ob_privacy_image_top_margin"
+                android:src="@drawable/ic_privacy_track"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/privacy_image_track" />
+
+            <TextView
+                style="@style/body"
+                android:layout_marginTop="@dimen/ob_privacy_text_top_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_privacy_1" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/ob_privacy_image_top_margin"
+                android:src="@drawable/ic_privacy_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/privacy_image_advice" />
+
+            <TextView
+                style="@style/body"
+                android:layout_marginTop="@dimen/ob_privacy_text_top_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_privacy_2" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/ob_privacy_image_top_margin"
+                android:src="@drawable/ic_privacy_trash"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/privacy_image_track" />
+
+            <TextView
+                style="@style/body"
+                android:layout_marginTop="@dimen/ob_privacy_text_top_margin"
+                android:gravity="center"
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/short_privacy_3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/buttonCallOfAction"
+        style="@style/button_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_filled_dark_round"
+        android:layout_marginLeft="@dimen/button_padding_horizontal"
+        android:layout_marginRight="@dimen/button_padding_horizontal"
+        android:gravity="center"
+        android:paddingTop="@dimen/button_padding_vertical"
+        android:paddingBottom="@dimen/button_padding_vertical"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

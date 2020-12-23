@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--Font family: Brandon text Line height: 14sp-->
+    <style name="regular_14p">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/brandontext_medium</item>
+    </style>
+
+    <!--Font family: Brandon text Line height: 12sp-->
+    <style name="regular_12p">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/brandontext_medium</item>
+    </style>
+
+    <!--Font family: Brandon text Line height: 12sp-->
+    <style name="regular_12p_dark">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#DC000000</item>
+        <item name="android:fontFamily">@font/brandontext_medium</item>
+    </style>
+
+    <!--  Font family: Brandon Bold Text Line height: 47sp-->
+    <style name="appname_47p">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/brandontext_bold</item>
+
+    </style>
+
+    <!--  Font family: Brandon Text Line height: 47sp-->
+    <style name="header_47p">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/brandontext_bold</item>
+    </style>
+
+    <!--  Font family: Brandon/Paragraph-->
+    <style name="paragraph">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/brandontext_regular</item>
+    </style>
+
+    <!--  Font family: Brandon/Paragraph bold-->
+    <style name="paragraph_medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/brandontext_medium</item>
+    </style>
+
+    <!--  Button label-->
+    <style name="button_label">
+        <item name="android:textSize">@dimen/button_lable_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <!--Font family: Brandon Text Line height: 25sp-->
+    <style name="header_24p">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--Font family: Brandon Text Line height: 19sp (identical to box height)-->
+    <style name="header_14sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorLink">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="title">
+        <item name="fontFamily">@font/brandontext_bold</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">#32345C</item>
+   </style>
+
+    <style name="subtitle">
+        <item name="fontFamily">@font/brandontext_bold</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">#32345C</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">#393C61</item>
+    </style>
+
+    <style name="tiny">
+        <item name="android:textSize">
+            7sp
+        </item>
+        <item name="android:textColor">#393C61</item>
+    </style>
+
+</resources>
